@@ -13,3 +13,8 @@ if [[ ! $local_branch_name =~ $valid_branch_regex ]]; then
 fi
 
 exit 0
+
+#execute lint-staged script
+exec >/dev/tty 2>&1
+
+npx lint-staged
