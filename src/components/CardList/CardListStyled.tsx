@@ -6,13 +6,7 @@ const CardListStyled = styled.ul`
   align-items: center;
   justify-content: center;
   padding: 40px;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: 20px;
-
-  @media (min-width: 600px) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 10px;
-  }
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 
   .card {
     display: flex;
@@ -20,6 +14,10 @@ const CardListStyled = styled.ul`
     width: 300px;
     display: flex;
     align-items: center;
+  }
+
+  img {
+    border-radius: 10px;
   }
 `;
 
