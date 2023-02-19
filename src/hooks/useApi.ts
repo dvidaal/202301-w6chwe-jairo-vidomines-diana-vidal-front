@@ -1,6 +1,6 @@
 import { useCallback } from "react";
-import { useAppDispatch } from "../app/hooks";
-import { loadRobotsActionCreator } from "../features/robots/robotsSlice";
+import { useAppDispatch } from "../store/hooks";
+import { loadRobotsActionCreator } from "../store/features/robots/robotsSlice";
 
 const useApi = () => {
   const dispatch = useAppDispatch();
