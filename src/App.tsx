@@ -1,9 +1,8 @@
 import { useEffect } from "react";
 import useApi from "./hooks/useApi";
-
 import Header from "./app/Header/Header";
 
-function App() {
+const App = () => {
   const { getRobots } = useApi();
 
   useEffect(() => {
@@ -17,6 +16,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;
