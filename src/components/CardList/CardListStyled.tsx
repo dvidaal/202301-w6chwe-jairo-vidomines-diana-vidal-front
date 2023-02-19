@@ -14,7 +14,7 @@ const CardListStyled = styled.ul`
     grid-column-gap: 10px;
   }
 
-  li {
+  .card {
     display: flex;
     justify-content: center;
     width: 300px;

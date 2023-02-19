@@ -5,21 +5,30 @@ export interface RobotProps {
   robot: RobotStructure;
 }
 
-const Card = ({ robot }: RobotProps): JSX.Element => {
+const Card = ({
+  robot: {
+    image,
+    name,
+    stats: { speed, endurance, creationDate },
+  },
+}: RobotProps): JSX.Element => {
   return (
     <>
-      <CardStyled>
-        <div className="cardContainer">
+      <CardStyled className="card-content">
+        <div className="card-data">
           <img
-            src={robot.image}
+            className="card-data_image"
+            src={image}
             alt="R2-D2 foto frontal"
             width="200"
             height="300"
           />
-          <h2 className="name">{robot.name}</h2>
-          <span>Speed: {robot.stats.speed}</span>
-          <span>Endurance: {robot.stats.endurance}</span>
-          <span>Date:{robot.stats.creationDate}</span>
+          <h2 className="card-data_name">{name}</h2>
+          <span className="card-container_speed">Speed: {speed}</span>
+          <span className="card-container_endurance">
+            Endurance: {endurance}
+          </span>
+          <span className="card-container_date">Date: {creationDate}</span>
         </div>
       </CardStyled>
     </>
