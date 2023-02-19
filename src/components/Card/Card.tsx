@@ -19,7 +19,7 @@ const Card = ({ robot }: RobotProps): JSX.Element => {
           <h2 className="name">{robot.name}</h2>
           <span>Speed: {robot.stats.speed}</span>
           <span>Endurance: {robot.stats.endurance}</span>
-          <span>Date: {robot.stats.creationDate}</span>
+          <span>Date:{robot.stats.creationDate}</span>
         </div>
       </CardStyled>
     </>
