@@ -1,10 +1,11 @@
 interface RobotStructure {
+  id: string;
   image: string;
   name: string;
   stats: {
-    speed: number;
-    endurance: number;
-    creation: Date;
+    speed: string;
+    endurance: string;
+    creationDate: string;
   };
 }
 
