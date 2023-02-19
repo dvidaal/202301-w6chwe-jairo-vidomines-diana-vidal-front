@@ -6,7 +6,7 @@ describe("Give a Card component", () => {
   describe("When rendered", () => {
     test("Then it should return a rendered card with the name 'R2-D2' with a heading'", () => {
       const robot: RobotStructure = {
-        id: "",
+        _id: "",
         image: "",
         name: "R2-D2",
         stats: {

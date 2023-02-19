@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { RobotsStructure } from "../../types";
+import { RobotsStructure } from "../../../types";
 
 const initialState: RobotsStructure = [];
 

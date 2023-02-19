@@ -4,7 +4,7 @@ describe("Given a loadRobots reducer", () => {
   describe("When it receives a list of two robots", () => {
     test("Then it should return a list of two robots", () => {
       const robotRoomba = {
-        id: "",
+        _id: "",
         name: "Roomba",
         image: "",
         stats: {
@@ -15,7 +15,7 @@ describe("Given a loadRobots reducer", () => {
       };
 
       const robotWalle = {
-        id: "",
+        _id: "",
         name: "Walle",
         image: "",
         stats: {

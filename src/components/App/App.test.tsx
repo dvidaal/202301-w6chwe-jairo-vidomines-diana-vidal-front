@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
-import Wrapper from "./mocks/Wrapper";
+import Wrapper from "../../mocks/Wrapper";
 
 describe("Given a component App", () => {
   describe("When rendered", () => {

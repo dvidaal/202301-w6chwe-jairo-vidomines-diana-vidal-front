@@ -1,5 +1,5 @@
 interface RobotStructure {
-  id: string;
+  _id: string;
   image: string;
   name: string;
   stats: {
