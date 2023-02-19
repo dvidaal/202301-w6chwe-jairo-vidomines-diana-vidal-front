@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import useApi from "./hooks/useApi";
-import Header from "./app/Header/Header";
+import Header from "./components/Header/Header";
 
 const App = () => {
   const { getRobots } = useApi();
