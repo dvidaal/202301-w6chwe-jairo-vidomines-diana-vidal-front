@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const CardStyled = styled.article`
   width: 230px;
-  height: 440px;
+  height: 460px;
   border: 2px solid black;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
@@ -10,6 +10,10 @@ const CardStyled = styled.article`
 
   span {
     color: black;
+  }
+
+  img {
+    object-fit: cover;
   }
 
   .cardContainer {
