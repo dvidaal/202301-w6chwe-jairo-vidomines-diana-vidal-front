@@ -50,5 +50,16 @@
     "@types/styled-components": "^5.1.26",
     "husky": "^8.0.0",
     "styled-components": "^5.3.6"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "!src/index.ts",
+      "!src/index.tsx",
+      "!src/reportWebVitals.ts",
+      "!src/react-app-env.d.ts",
+      "!src/setupTests.ts"
+    ]
   }
 }

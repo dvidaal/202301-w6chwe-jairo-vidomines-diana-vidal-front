@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 import Wrapper from "../../mocks/Wrapper";
+import GlobalStyles from "../../styles/GlobalStyles";
 
 describe("Given a component App", () => {
   describe("When rendered", () => {
@@ -9,6 +10,7 @@ describe("Given a component App", () => {
 
       render(
         <Wrapper>
+          <GlobalStyles />
           <App />
         </Wrapper>
       );
